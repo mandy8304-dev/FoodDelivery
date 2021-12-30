@@ -10,10 +10,10 @@
 /.idea/misc.xml
 /.idea/gradle.xml
 /.idea/compiler.xml
-/.idea/.name.xml
 .DS_Store
 /build
 /captures
 .externalNativeBuild
 .cxx
 local.properties
+/.idea/.name
