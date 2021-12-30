@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="72dp"-->
+<!--            android:layout_marginRight="32dp"-->
+<!--            android:layout_marginLeft="32dp">-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btnDispatch"-->
+<!--                app:fontPath="fonts/Roboto-Bold.ttf"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_margin="4dp"-->
+<!--                android:background="@drawable/button_shape_default"-->
+<!--                android:gravity="left|center_vertical"-->
+<!--                android:paddingLeft="16dp"-->
+<!--                android:text="@string/menu_dispatch"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textStyle="bold"-->
+<!--                tools:ignore="MissingPrefix"-->
+<!--                android:drawableTint="@android:color/white"-->
+<!--                android:textColor="@android:color/white"-->
+<!--                />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/txtDispatchNumber"-->
+<!--                app:fontPath="fonts/Roboto-Light.ttf"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginRight="16dp"-->
+<!--                android:background="@drawable/textview_shape_default"-->
+<!--                android:elevation="12dp"-->
+<!--                android:gravity="center"-->
+<!--                android:minWidth="40dp"-->
+<!--                android:padding="4dp"-->
+<!--                android:text="0"-->
+<!--                android:textColor="@color/textColorPrimaryInverse"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textStyle="bold"-->
+<!--                tools:ignore="MissingPrefix" />-->
+
+<!--        </RelativeLayout>-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="72dp"-->
+<!--            android:layout_marginRight="32dp"-->
+<!--            android:layout_marginLeft="32dp"-->
+<!--            android:layout_marginTop="16dp">-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btnSearchOrder"-->
+<!--                app:fontPath="fonts/Roboto-Bold.ttf"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_margin="4dp"-->
+<!--                android:background="@drawable/button_shape_default"-->
+<!--                android:gravity="left|center_vertical"-->
+<!--                android:paddingLeft="16dp"-->
+<!--                android:text="@string/menu_search_order"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textStyle="bold"-->
+<!--                tools:ignore="MissingPrefix"-->
+<!--                android:drawableTint="@android:color/white"-->
+<!--                android:textColor="@android:color/white"-->
+<!--                />-->
+
+
+<!--        </RelativeLayout>-->
+
+    </LinearLayout>
+
+<!--    <TextView-->
+<!--        android:id="@+id/txtLastSync"-->
+<!--        app:fontPath="fonts/Roboto-Light.ttf"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Última sincronización: -"-->
+<!--        android:textColor="@color/textColorPrimaryInverse"-->
+<!--        android:textSize="14sp"-->
+<!--        tools:ignore="MissingPrefix"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        android:padding="8dp"-->
+<!--        android:gravity="center"/>-->
+
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/fab"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="bottom|end"-->
+<!--        android:layout_marginEnd="@dimen/fab_margin"-->
+<!--        android:layout_marginBottom="16dp"-->
+<!--        app:srcCompat="@android:drawable/ic_dialog_email" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

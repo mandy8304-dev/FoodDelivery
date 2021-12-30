@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.oded.food.delivery.admin.view.fragment.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_provider"
+        android:name="com.oded.food.delivery.admin.view.fragment.provider.ProviderFragment"
+        android:label="@string/menu_provider"
+        tools:layout="@layout/fragment_provider" />
+
+    <fragment
+        android:id="@+id/nav_order"
+        android:name="com.oded.food.delivery.admin.view.fragment.orders.OrderFragment"
+        android:label="@string/menu_order"
+        tools:layout="@layout/fragment_order" />
+
+    <fragment
+        android:id="@+id/nav_distributor"
+        android:name="com.oded.food.delivery.admin.view.fragment.distributor.DistributorFragment"
+        android:label="@string/menu_distributor"
+        tools:layout="@layout/fragment_distributor" />
+
+
+    <fragment
+        android:id="@+id/nav_client"
+        android:name="com.oded.food.delivery.admin.view.fragment.client.ClientFragment"
+        android:label="@string/menu_client"
+        tools:layout="@layout/fragment_client" />
+
+    <fragment
+        android:id="@+id/nav_setting_app"
+        android:name="com.oded.food.delivery.admin.view.fragment.setting.SettingFragment"
+        android:label="@string/app_setting"
+        tools:layout="@layout/fragment_setting" />
+
+
+    <fragment
+        android:id="@+id/nav_add_provider"
+        android:name="com.oded.food.delivery.admin.view.fragment.provider.register.AddProviderFragment"
+        android:label="@string/add_provider"
+        tools:layout="@layout/fragment_add_provider" />
+
+    <fragment
+        android:id="@+id/nav_add_distributor"
+        android:name="com.oded.food.delivery.admin.view.fragment.distributor.register.AddDistributorFragment"
+        android:label="@string/add_distributor"
+        tools:layout="@layout/fragment_add_distributor" />
+
+    <fragment
+        android:id="@+id/nav_employee"
+        android:name="com.oded.food.delivery.admin.view.fragment.employee.EmployeeFragment"
+        android:label="@string/menu_employee"
+        tools:layout="@layout/fragment_employee" />
+
+    <fragment
+        android:id="@+id/nav_add_employee"
+        android:name="com.oded.food.delivery.admin.view.fragment.employee.register.AddEmployeeFragment"
+        android:label="@string/menu_add_employee"
+        tools:layout="@layout/fragment_add_employee" />
+
+    <fragment
+        android:id="@+id/nav_product"
+        android:name="com.oded.food.delivery.admin.view.fragment.product.ProductFragment"
+        android:label="@string/menu_product"
+        tools:layout="@layout/fragment_product" />
+
+
+</navigation>
