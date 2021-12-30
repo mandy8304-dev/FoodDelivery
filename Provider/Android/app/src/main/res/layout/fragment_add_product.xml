@@ -18,38 +18,36 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/profile_image"
-                android:layout_width="96dp"
-                android:layout_height="96dp"
-                android:layout_marginTop="54dp"
-                android:src="@drawable/ic_profile_default"
-                app:civ_border_width="2dp"
-                app:civ_border_color="@color/secondaryText"
-                android:layout_gravity="center_horizontal"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="General data"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="32dp"
+                android:textStyle="bold"/>
 
-
+            <!-- Name -->
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/layoutEditName"
+                android:id="@+id/layoutEditNameES"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="32dp"
                 android:layout_marginRight="32dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="8dp"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/editName"
+                    android:id="@+id/editNameES"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Name"
+                    android:hint="Name (ES)"
                     android:imeOptions="actionNext"/>
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/layoutEditLastname"
+                android:id="@+id/layoutEditNameEN"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="32dp"
@@ -58,37 +56,17 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/editLastname"
+                    android:id="@+id/editNameEN"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Lastname"
+                    android:hint="Name (EN)"
                     android:imeOptions="actionNext"/>
 
             </com.google.android.material.textfield.TextInputLayout>
 
-           <RadioGroup
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:orientation="horizontal"
-               android:layout_marginLeft="32dp"
-               android:layout_marginRight="32dp"
-               android:layout_marginTop="16dp">
-
-               <RadioButton
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="Male"
-                   android:layout_marginRight="16dp"/>
-
-               <RadioButton
-                   android:layout_width="wrap_content"
-                   android:layout_height="wrap_content"
-                   android:text="Female"/>
-
-           </RadioGroup>
-
+            <!-- Description -->
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/layoutEditEmail"
+                android:id="@+id/layoutEditDescriptionES"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="32dp"
@@ -97,18 +75,16 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/editEmail"
+                    android:id="@+id/editDescriptionES"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Email"
+                    android:hint="Description (ES)"
                     android:imeOptions="actionNext"/>
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <!-- System data access -->
-
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/layoutEditUsername"
+                android:id="@+id/layoutEditDescriptionEN"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="32dp"
@@ -117,89 +93,268 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/editUsername"
+                    android:id="@+id/editDescriptionEN"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Username"
+                    android:hint="Description (EN)"
                     android:imeOptions="actionNext"/>
 
             </com.google.android.material.textfield.TextInputLayout>
 
+            <!-- Keywords -->
+
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/layoutEditPassword"
+                android:id="@+id/layoutEditKeywordES"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="32dp"
                 android:layout_marginRight="32dp"
                 android:layout_marginTop="16dp"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                app:passwordToggleEnabled="true"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editKeywordES"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Keyword (ES)"
+                    android:imeOptions="actionNext"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layoutEditKeywordEN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="16dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editKeywordEN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Keyword (EN)"
+                    android:imeOptions="actionNext"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layoutCategorySpinner"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="16dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Category"
                 >
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/editPassword"
+                <AutoCompleteTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Password"
-                    android:imeOptions="actionNext"
-                    android:inputType="textPassword"/>
-
+                    android:inputType="none"
+                    />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/layoutEditConfirmedPassword"
+            <!-- Price and Quantity -->
+            <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="32dp"
-                android:layout_marginRight="32dp"
+                android:orientation="horizontal"
                 android:layout_marginTop="16dp"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                app:passwordToggleEnabled="true"
+                android:layout_marginRight="32dp"
+                android:layout_marginLeft="32dp"
                 >
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/editConfirmedPassword"
-                    android:layout_width="match_parent"
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layoutEditPrice"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:hint="Confirmed password"
-                    android:imeOptions="actionNext"
-                    android:inputType="textPassword"/>
+                    android:layout_marginRight="8dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
-            </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Price"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal"/>
 
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layoutEditQuantity"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/editQuantity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Quantity"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <!-- Product Type -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Product type"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="32dp"
+                android:textStyle="bold"/>
             <RadioGroup
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_marginLeft="32dp"
                 android:layout_marginRight="32dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="8dp"
+                android:checkedButton="@+id/rbSimple"
                 >
 
                 <RadioButton
+                    android:id="@+id/rbSimple"
                     android:layout_width="wrap_content"
                     android:layout_height="32dp"
-                    android:text="Activated"
-                    android:layout_marginRight="16dp"/>
+                    android:text="Simple"
+                    android:layout_marginRight="16dp"
+                    />
 
                 <RadioButton
+                    android:id="@+id/rbModules"
                     android:layout_width="wrap_content"
                     android:layout_height="32dp"
-                    android:text="Blocked"/>
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="32dp"
-                    android:text="Deleted"/>
+                    android:text="Modules"/>
 
             </RadioGroup>
+
+            <!-- Module composition  -->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/layoutModuleComposition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Module composition"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textStyle="bold"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewModuleComposition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:overScrollMode="never"
+                    android:layout_marginTop="8dp"
+                    />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/AddModuleComposition"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/background_border_orange"
+                    android:text="+"
+                    android:textColor="@color/white"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="8dp"
+                    android:textStyle="bold"
+                    android:textSize="30sp"
+                    />
+
+                <CheckBox
+                    android:id="@+id/ApplyToDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Apply to description"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <!-- Status -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="32dp"
+                android:textStyle="bold"/>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="8dp"
+                android:checkedButton="@+id/rbPublished"
+                >
+
+                <RadioButton
+                    android:id="@+id/rbPublished"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:text="Published"
+                    android:layout_marginRight="16dp"
+                    />
+
+                <RadioButton
+                    android:id="@+id/rbOnlyForModules"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:text="Only for modules"/>
+
+                <RadioButton
+                    android:id="@+id/rbDisable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:text="Disable"/>
+
+
+
+
+            </RadioGroup>
+
+
+            <!-- Images -->
+            <TextView
+                android:id="@+id/txtGallery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gallery (0)"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="32dp"
+                android:textStyle="bold"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewGallery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="8dp"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="match_parent"
                 android:layout_height="54dp"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/layoutEditPassword"
                 android:layout_marginTop="44dp"
                 android:layout_marginRight="32dp"
                 android:layout_marginLeft="32dp"

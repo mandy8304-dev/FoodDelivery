@@ -4,7 +4,10 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import com.oded.food.delivery.provider.R
 import com.oded.food.delivery.provider.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -24,5 +27,13 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        binding.btnDispatch.setOnClickListener {
+            findNavController().navigate(R.id.nav_dispatch, bundleOf())
+        }
+
+        binding.btnInventory.setOnClickListener {
+            findNavController().navigate(R.id.nav_inventory, bundleOf())
+        }
     }
 }

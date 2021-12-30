@@ -7,7 +7,7 @@
         <item
             android:id="@+id/nav_home"
             android:title="@string/menu_home"
-            android:icon="@drawable/ic_baseline_dashboard_24"/>
+            android:icon="@drawable/ic_baseline_home_24"/>
 
         <item
             android:id="@+id/nav_product"
@@ -17,12 +17,12 @@
         <item
             android:id="@+id/nav_inventory"
             android:title="@string/menu_inventory"
-            android:icon="@drawable/ic_baseline_art_track_24"/>
+            android:icon="@drawable/ic_baseline_auto_awesome_mosaic_24"/>
 
         <item
             android:id="@+id/nav_dispatch"
             android:title="@string/menu_dispatch"
-            android:icon="@drawable/ic_baseline_art_track_24"/>
+            android:icon="@drawable/ic_baseline_assignment_24"/>
 
     </group>
 
