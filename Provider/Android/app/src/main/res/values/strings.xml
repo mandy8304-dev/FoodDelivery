@@ -1,3 +1,23 @@
 <resources>
-    <string name="app_name">FoodDeliveryProvider</string>
+    <string name="app_name">FoodDeliveryAdmin</string>
+
+    <string name="menu_home">Dashboard</string>
+    <string name="menu_provider">Providers</string>
+    <string name="menu_client">Clients</string>
+    <string name="menu_distributor">Distributors</string>
+    <string name="menu_order">Orders</string>
+    <string name="closed_session">Log out</string>
+    <string name="app_setting">Setting</string>
+    <string name="nav_options">Options</string>
+    <string name="add_provider">Add provider</string>
+    <string name="add_distributor">Add distributor</string>
+    <string name="nav_profile">Profiles</string>
+    <string name="menu_employee">Employees</string>
+    <string name="menu_add_employee">Add employee</string>
+    <string name="menu_product">Products</string>
+    <string name="menu_add_product">Add product</string>
+    <string name="nav_inventory">Inventory</string>
+    <string name="menu_inventory">Inventory</string>
+    <string name="menu_dispatch">Dispatch</string>
+    <string name="menu_view_dispatch">Dispatch #</string>
 </resources>

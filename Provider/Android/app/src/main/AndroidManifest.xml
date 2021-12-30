@@ -22,7 +22,7 @@
         tools:replace="android:allowBackup">
         <activity
             android:name=".view.MainActivity"
-            android:theme="@style/Theme.FoodDeliveryProvider">
+            android:theme="@style/Theme.FoodDeliveryProvider.NoActionBar">
         </activity>
 
         <activity

@@ -23,13 +23,13 @@ class SplashScreenActivity : AppCompatActivity()  {
 
     private fun check() {
 
-        val ii = if (Preferences.getBooleanPreference(this@SplashScreenActivity, Utils.SESSION, false)) {
-            MainActivity.intent(this@SplashScreenActivity)
-        } else {
-             ActivityLogin.intent(this@SplashScreenActivity)
-        }
+//        val ii = if (Preferences.getBooleanPreference(this@SplashScreenActivity, Utils.SESSION, false)) {
+//            MainActivity.intent(this@SplashScreenActivity)
+//        } else {
+//             ActivityLogin.intent(this@SplashScreenActivity)
+//        }
 
-        startActivity(ii)
+        startActivity(/*ii*/MainActivity.intent(this@SplashScreenActivity))
         finish()
     }
 }
