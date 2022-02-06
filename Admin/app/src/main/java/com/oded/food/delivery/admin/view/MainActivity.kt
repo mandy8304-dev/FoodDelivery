@@ -15,9 +15,11 @@ import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.navigation.NavigationView
 import com.google.android.material.snackbar.Snackbar
 import com.oded.food.delivery.admin.R
+import com.oded.food.delivery.admin.common.Dialog
+import com.oded.food.delivery.admin.common.impl.ICallback
 import com.oded.food.delivery.admin.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity() {
 
     private lateinit var binding : ActivityMainBinding
     private lateinit var appBarConfiguration: AppBarConfiguration
@@ -113,6 +115,17 @@ class MainActivity : AppCompatActivity() {
         }
 
     private fun logout() {
+
+        Dialog.showDialogAsk(this@MainActivity, object : ICallback {
+            override fun callback(param: Any?) {
+                if (param as String == Dialog.ACTION_YES) {
+                    auth?.signOut()
+                    startActivity(SplashScreenActivity.intent(this@MainActivity))
+                    finish()
+                }
+            }
+
+        }, getString(R.string.ask_logout), getString(R.string.yes), getString(R.string.no))
 
     }
 }

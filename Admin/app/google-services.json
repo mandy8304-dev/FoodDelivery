@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "561175284453",
+    "project_id": "market-oded",
+    "storage_bucket": "market-oded.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:561175284453:android:728237ef3cf4f981efa20c",
+        "android_client_info": {
+          "package_name": "com.oded.food.delivery.admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "561175284453-4kvh9t48hu1timgefu50gfjp2qqf0dqr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGmXEBo8Iq5Hs-Tt0q6AK4UHI16FGazjE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "561175284453-4kvh9t48hu1timgefu50gfjp2qqf0dqr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

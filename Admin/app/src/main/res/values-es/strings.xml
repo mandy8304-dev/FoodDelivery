@@ -17,14 +17,13 @@
     <string name="menu_product">Products</string>
     <string name="menu_add_product">Add product</string>
     <string name="nav_inventory">Inventory</string>
-    <string name="cancel">Cancel</string>
-    <string name="ok">Ok</string>
-    <string name="ask_logout">Do you want to log out?</string>
-    <string name="yes">Yes</string>
+    <string name="cancel">Cancelar</string>
+    <string name="ok">Aceptar</string>
+    <string name="ask_logout">Deseas cerrar la sesion?</string>
+    <string name="yes">Si</string>
     <string name="no">No</string>
     <string name="username_empty">Username is empty</string>
     <string name="inavlid_email">Invalid email</string>
     <string name="password_empty">Password is empty</string>
     <string name="auth_failed">Authentication failed.</string>
-    <string name="please_login">Please login...</string>
 </resources>
