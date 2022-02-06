@@ -2,8 +2,10 @@
 buildscript {
 
 
-    ext.gradle_version = '7.0.4'
+    ext.gradle_version = '7.1.0'
     ext.kotlin_version = '1.6.10'
+    ext.ucrop = '2.2.6-native'
+    ext.dexter = '6.2.3'
 
     repositories {
         google()

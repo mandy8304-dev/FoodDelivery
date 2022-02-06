@@ -28,6 +28,8 @@ class ProviderFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.addProvider.setOnClickListener {
+
+
             findNavController().navigate(R.id.nav_add_provider, Bundle())
         }
     }

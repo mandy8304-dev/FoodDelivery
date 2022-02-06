@@ -26,4 +26,23 @@
     <string name="inavlid_email">Invalid email</string>
     <string name="password_empty">Password is empty</string>
     <string name="auth_failed">Authentication failed.</string>
+    <string name="permission_denied">Permission denied</string>
+    <string name="permission_rationale_title">Necesitamos este permiso</string>
+    <string name="permission_rationale_message">Este permiso es necesario para hacer algunas cosas elegantes así que por favor, permítelo!</string>
+    <string name="please_login">Please login...</string>
+    <string name="select_a_photo">Select a photo</string>
+    <string name="confirmed_password_empty">Confirmed Password is empty</string>
+    <string name="password_not_equal">Password not equal</string>
+    <string name="name_is_empty">Name is empty</string>
+    <string name="lastname_is_empty">Lastname is empty</string>
+    <string name="email_is_empty">Email is empty</string>
+    <string name="you_must_select_the_gender">You must select the gender.</string>
+    <string name="you_must_select_a_status_type">You must select a status type.</string>
+    <string name="gender">Gender</string>
+    <string name="status_type">Status type</string>
+    <string name="password_greater_than_7_characters">Password greater than 7 characters</string>
+    <string name="uuid">UUID is empty</string>
+    <string name="selected_option">Selected option</string>
+    <string name="gallery">Gallery</string>
+    <string name="take_photo">Take photo</string>
 </resources>

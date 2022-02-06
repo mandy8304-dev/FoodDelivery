@@ -207,6 +207,37 @@ class Dialog {
 
             alert.show()
         }
+
+
+        @JvmStatic
+        fun showSingleSelection(context: Context, title: String, items: MutableList<String>,
+                                callback: ICallback?, positiveButton: String,
+                                negativeButton: String,
+                                op: Int = 0, actionButton: Boolean = true) {
+            var option = op
+            val builder = MaterialAlertDialogBuilder(context,
+                R.style.ThemeOverlay_MaterialComponents_MaterialAlertDialog)
+            builder.setTitle(title)
+            builder.setSingleChoiceItems(items.toTypedArray(), option
+            ) { dialog, which -> option = which
+                if (!actionButton) {
+                    dialog.dismiss()
+                    callback?.callback(option)
+                }
+            }
+            builder.setPositiveButton(positiveButton) { dialog, _ ->
+                dialog.dismiss()
+                callback?.callback(option)
+            }
+            builder.setNegativeButton(negativeButton) { dialog, _ ->
+                dialog.dismiss()
+            }
+
+//            val dialog = builder.create()
+//            dialog.show()
+            builder.show()
+
+        }
     }
 
 

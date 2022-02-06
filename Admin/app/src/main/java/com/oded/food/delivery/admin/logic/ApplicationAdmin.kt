@@ -1,12 +1,14 @@
 package com.oded.food.delivery.admin.logic
 
-import android.app.Application
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+
+import androidx.multidex.MultiDexApplication
 import com.oded.food.delivery.admin.logic.impl.IApplication
 
-class ApplicationAdmin : Application(), IApplication {
+
+class ApplicationAdmin : MultiDexApplication(), IApplication {
 
     private lateinit var auth: FirebaseAuth
 

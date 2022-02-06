@@ -14,7 +14,7 @@ open class BaseActivity : AppCompatActivity() {
 
     protected var currentUser: FirebaseUser? = null
     protected var auth: FirebaseAuth? = null
-    protected var progressDialog: ProgressBarDialog? = null
+    private var progressDialog: ProgressBarDialog? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

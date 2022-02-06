@@ -2,22 +2,20 @@ package com.oded.food.delivery.admin.view
 
 import android.content.Context
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.core.content.ContextCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.navigation.NavigationView
-import com.google.android.material.snackbar.Snackbar
 import com.oded.food.delivery.admin.R
 import com.oded.food.delivery.admin.common.Dialog
 import com.oded.food.delivery.admin.common.impl.ICallback
 import com.oded.food.delivery.admin.databinding.ActivityMainBinding
+
+
 
 class MainActivity : BaseActivity() {
 
@@ -39,7 +37,6 @@ class MainActivity : BaseActivity() {
 
         setSupportActionBar(binding.appBarMain.toolbar)
 
-
         val drawerLayout: DrawerLayout = binding.drawerLayout
         binding.navView.setNavigationItemSelectedListener(navigationItemListener)
         navController = findNavController(R.id.nav_host_fragment)
@@ -51,7 +48,6 @@ class MainActivity : BaseActivity() {
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
-//        navView.setupWithNavController(navController)
     }
 
     override fun onSupportNavigateUp(): Boolean {

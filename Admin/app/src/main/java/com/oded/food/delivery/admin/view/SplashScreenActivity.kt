@@ -5,12 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import androidx.appcompat.app.AppCompatActivity
-import com.google.firebase.auth.FirebaseUser
-import com.oded.food.delivery.admin.common.Preferences
-import com.oded.food.delivery.admin.common.Utils
 import com.oded.food.delivery.admin.databinding.ActivitySplashscreenBinding
-import com.oded.food.delivery.admin.logic.impl.IApplication
 
 class SplashScreenActivity : BaseActivity()  {
 
