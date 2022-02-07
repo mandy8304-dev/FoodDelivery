@@ -92,7 +92,6 @@
                 android:layout_marginLeft="32dp"
                 android:layout_marginTop="16dp"
                 />
-
            <RadioGroup
                android:id="@+id/radioGroupGender"
                android:layout_width="wrap_content"
@@ -268,7 +267,6 @@
                 android:layout_marginLeft="32dp"
                 android:layout_marginTop="16dp"
                 />
-
             <RadioGroup
                 android:id="@+id/radioGroupStatus"
                 android:layout_width="wrap_content"

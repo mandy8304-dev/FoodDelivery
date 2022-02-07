@@ -51,10 +51,10 @@ class AddProviderFragment : Fragment() {
 
 
     companion object {
-        const val REQUEST_SELECT_TAKE = 0x01
-        const val REQUEST_SELECT_PICTURE = 0x02
-        const val FORMAT_PHOTO = ".jpg"
-        const val INTENT_TYPE = "image/*"
+       private const val REQUEST_SELECT_TAKE = 0x01
+       private const val REQUEST_SELECT_PICTURE = 0x02
+       private const val FORMAT_PHOTO = ".jpg"
+       private const val INTENT_TYPE = "image/*"
     }
 
     override fun onCreateView(
@@ -328,7 +328,7 @@ class AddProviderFragment : Fragment() {
             Logger.e(e.toString())
             Toast.makeText(
                 context,
-                "Error al procesar la foto. Vuelva a intentarlo.", Toast.LENGTH_SHORT
+                getString(R.string.error_processing_photo), Toast.LENGTH_SHORT
             ).show()
         }
     }

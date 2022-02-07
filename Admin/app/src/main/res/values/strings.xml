@@ -45,4 +45,6 @@
     <string name="selected_option">Selected option</string>
     <string name="gallery">Gallery</string>
     <string name="take_photo">Take photo</string>
+    <string name="error_processing_photo">Error processing photo.</string>
+    <string name="role_is_empty">Role is empty</string>
 </resources>
